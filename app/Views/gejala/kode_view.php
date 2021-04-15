@@ -3,7 +3,7 @@
     <a href="<?= base_url('pages');?>" class="btn btn-success mb-2">Kembali</a>
     <div class="card">
         <div class="card-header bg-info text-white">
-            <h4 class="card-title">Basis Pengetahuan</h4>
+            <h4 class="card-title">Table Data Gejala</h4>
         </div>
         <div class="card-body">
             <div class="table-responsive">

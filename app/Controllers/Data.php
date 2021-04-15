@@ -10,16 +10,16 @@ class Data extends Controller
         $model = new Data_model();
         $data['title']     = 'Basis Data';
         $data['getData'] = $model->getData();
-        echo view('pages/header_view', $data);
-        echo view('pages/barang_view', $data);
-        echo view('pages/footer_view', $data);
+        echo view('basisdata/header_view', $data);
+        echo view('basisdata/barang_view', $data);
+        echo view('basisdata/footer_view', $data);
     }
     public function tambah()
     {
         $data['title']     = 'Tambah Basis Data';
-        echo view('pages/header_view', $data);
-        echo view('pages/tambah_view', $data);
-        echo view('pages/footer_view', $data);
+        echo view('basisdata/header_view', $data);
+        echo view('basisdata/tambah_view', $data);
+        echo view('basisdata/footer_view', $data);
     }
     public function add()
     {
@@ -32,7 +32,7 @@ class Data extends Controller
         );
         $model->saveData($data);
         echo '<script>
-                alert("Sukses Tambah Data Barang");
+                alert("Sukses Tambah Data ");
                 window.location="'.base_url('data').'"
             </script>';
     }
@@ -46,9 +46,9 @@ class Data extends Controller
             $data['data'] = $getData;
             $data['title']  = 'Edit '.$getData->nama_penyakit;
 
-            echo view('pages/header_view', $data);
-            echo view('pages/edit_view', $data);
-            echo view('pages/footer_view', $data);
+            echo view('basisdata/header_view', $data);
+            echo view('basisdata/edit_view', $data);
+            echo view('basisdata/footer_view', $data);
 
         }else{
 
@@ -71,7 +71,7 @@ class Data extends Controller
         );
         $model->editData($data,$id);
         echo '<script>
-                alert("Sukses Edit Data Barang");
+                alert("Sukses Edit Data ");
                 window.location="'.base_url('data').'"
             </script>';
 
@@ -85,7 +85,7 @@ class Data extends Controller
         {
             $model->hapusData($id);
             echo '<script>
-                    alert("Hapus Data Barang Sukses");
+                    alert("Hapus Data Sukses");
                     window.location="'.base_url('data').'"
                 </script>';
 

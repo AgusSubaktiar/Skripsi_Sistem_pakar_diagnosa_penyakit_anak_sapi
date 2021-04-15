@@ -8,18 +8,18 @@ class Kode extends Controller
     public function index()
     {
         $model = new Kode_model();
-        $data['title']     = 'Basis Data';
+        $data['title']     = 'Data Kode';
         $data['getData'] = $model->getData();
-        echo view('pages/header_view', $data);
-        echo view('pages/kode_view', $data);
-        echo view('pages/footer_view', $data);
+        echo view('gejala/header_view', $data);
+        echo view('gejala/kode_view', $data);
+        echo view('gejala/footer_view', $data);
     }
     public function tambah()
     {
-        $data['title']     = 'Tambah Basis Data';
-        echo view('pages/header_view', $data);
-        echo view('pages/tambah_kode', $data);
-        echo view('pages/footer_view', $data);
+        $data['title']     = 'Tambah Data Kode';
+        echo view('gejala/header_view', $data);
+        echo view('gejala/tambah_kode', $data);
+        echo view('gejala/footer_view', $data);
     }
     public function add()
     {
@@ -30,7 +30,7 @@ class Kode extends Controller
         );
         $model->saveData($data);
         echo '<script>
-                alert("Sukses Tambah Data Barang");
+                alert("Sukses Tambah Data Kode");
                 window.location="'.base_url('kode').'"
             </script>';
     }
@@ -44,9 +44,9 @@ class Kode extends Controller
             $data['data'] = $getData;
             $data['title']  = 'Edit '.$getData->nama_kode;
 
-            echo view('pages/header_view', $data);
-            echo view('pages/edit_kode', $data);
-            echo view('pages/footer_view', $data);
+            echo view('gejala/header_view', $data);
+            echo view('gejala/edit_kode', $data);
+            echo view('gejala/footer_view', $data);
 
         }else{
 
@@ -67,7 +67,7 @@ class Kode extends Controller
         );
         $model->editData($data,$id);
         echo '<script>
-                alert("Sukses Edit Data Barang");
+                alert("Sukses Edit Data Kode");
                 window.location="'.base_url('kode').'"
             </script>';
 
@@ -81,7 +81,7 @@ class Kode extends Controller
         {
             $model->hapusData($id);
             echo '<script>
-                    alert("Hapus Data Barang Sukses");
+                    alert("Hapus Data Kode Sukses");
                     window.location="'.base_url('kode').'"
                 </script>';
 

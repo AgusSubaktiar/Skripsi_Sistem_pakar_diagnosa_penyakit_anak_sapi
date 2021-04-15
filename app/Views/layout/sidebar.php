@@ -39,11 +39,11 @@
                     <i class="fas fa-fw fa-table"></i>
                     <span>Kode Gejala</span>
                 </a>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                 <a class="nav-link collapsed" href="/rule">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Data Penyakit</span>
-                </a>
+                </a> -->
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Components:</h6>
