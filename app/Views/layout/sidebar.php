@@ -35,12 +35,12 @@
                     <span>Basis Pengetahuan</span>
                 </a>
                 <li class="nav-item">
-                <a class="nav-link collapsed" href="/data">
+                <a class="nav-link collapsed" href="/kode">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Kode Gejala</span>
                 </a>
                 <li class="nav-item">
-                <a class="nav-link collapsed" href="/data">
+                <a class="nav-link collapsed" href="/rule">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Data Penyakit</span>
                 </a>
