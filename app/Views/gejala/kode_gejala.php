@@ -23,10 +23,10 @@
                                 <td><?= $isi['kode_gejala'];?></td>
                                 <td><?= $isi['nama_gejala'];?></td>
                                 <td>
-                                    <a href="<?= base_url('kode/edit/'.$isi['id_basis']);?>" 
+                                    <a href="<?= base_url('kode/edit/'.$isi['id_kode']);?>" 
                                     class="btn btn-success">
                                     Edit</a>
-                                    <a href="<?= base_url('kode/hapus/'.$isi['id_basis']);?>" 
+                                    <a href="<?= base_url('kode/hapus/'.$isi['id_kode']);?>" 
                                     onclick="javascript:return confirm('Apakah ingin menghapus data barang ?')"
                                     class="btn btn-danger">
                                     Hapus</a>

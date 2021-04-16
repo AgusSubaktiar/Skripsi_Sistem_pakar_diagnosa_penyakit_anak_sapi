@@ -13,6 +13,7 @@ class Kode extends Controller
         echo view('gejala/header_view', $data);
         echo view('gejala/kode_view', $data);
         echo view('gejala/footer_view', $data);
+        
     }
     public function tambah()
     {
@@ -42,7 +43,7 @@ class Kode extends Controller
         if(isset($getData))
         {
             $data['data'] = $getData;
-            $data['title']  = 'Edit '.$getData->nama_kode;
+            $data['title']  = 'Edit '.$getData->kode_gejala;
 
             echo view('gejala/header_view', $data);
             echo view('gejala/edit_kode', $data);
