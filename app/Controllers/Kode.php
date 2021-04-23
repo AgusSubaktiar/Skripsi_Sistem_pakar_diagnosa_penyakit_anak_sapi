@@ -10,9 +10,11 @@ class Kode extends Controller
         $model = new Kode_model();
         $data['title']     = 'Data Kode';
         $data['getData'] = $model->getData();
-        echo view('gejala/header_view', $data);
-        echo view('gejala/kode_view', $data);
-        echo view('gejala/footer_view', $data);
+        // echo view('gejala/header_view', $data);
+      
+        echo view('gejala/kode_view',$data); 
+      
+        
         
     }
     public function tambah()

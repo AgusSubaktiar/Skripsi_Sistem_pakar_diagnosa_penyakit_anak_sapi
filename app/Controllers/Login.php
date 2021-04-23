@@ -39,7 +39,7 @@ class Login extends Controller{
             }else{
             session()->set('id_user', $cekLogin['id_user']);
             session()->set('user_name', $cekLogin['user_name']);
-             return redirect()->to('/data');
+             return redirect()->to('/home');
             }
             // return redirect()->to('/Login');
         }

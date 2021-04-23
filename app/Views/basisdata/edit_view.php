@@ -1,3 +1,5 @@
+
+
 <div class="container p-5">
     <a href="<?= base_url('data');?>" class="btn btn-secondary mb-2">Kembali</a>
     <div class="card">

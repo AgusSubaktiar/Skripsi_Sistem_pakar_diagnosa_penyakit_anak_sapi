@@ -37,6 +37,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/news', 'News::index');
 $routes->get('/news/(:any)', 'News::viewNews/$1');
 $routes->get('/dashboard', 'Dashboard::index',['filter' => 'auth']);
+$routes->get('/detail', 'penyakit::detail');
 
 /*
  * --------------------------------------------------------------------

@@ -1,7 +1,10 @@
+<?=$this->extend('layout/base');?>
+
+<?=$this->section('content');?>
 <div class="container p-5">
     <a href="<?= base_url('kode');?>" class="btn btn-secondary mb-2">Kembali</a>
     <div class="card">
-        <div class="card-header bg-info text-white">
+        <div class="card-header bg-primary text-white">
             <h4 class="card-title">Tambah Data Gejala</h4>
         </div>
         <div class="card-body">
@@ -14,9 +17,11 @@
                     <label for="">Nama Gejala</label>
                     <input type="text" name="nama_gejala" class="form-control" required>
                 </div>
-                <button class="btn btn-success">Tambah Data</button>
+                
+                <button class="btn btn-primary">Tambah Data</button>
             </form>
             
         </div>
     </div>
 </div>
+<?=$this->endSection('');?>

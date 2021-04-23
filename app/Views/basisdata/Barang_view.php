@@ -1,6 +1,10 @@
-<div class="container pt-5">
-    <a href="<?= base_url('data/tambah');?>" class="btn btn-success mb-2">Tambah Data</a>
-    <a href="<?= base_url('pages');?>" class="btn btn-success mb-2">Kembali</a>
+<?=$this->extend('layout/base');?>
+
+<?=$this->section('content');?>
+
+<div class="container">
+    <a href="<?= base_url('data/tambah');?>" class="btn btn-info mb-2">Tambah Data</a>
+    <a href="<?= base_url('pages');?>" class="btn btn-info mb-2">Kembali</a>
     <div class="card">
         <div class="card-header bg-info text-white">
             <h4 class="card-title">Basis Pengetahuan</h4>
@@ -26,7 +30,7 @@
                                 <td><?= $isi['nama_gejala'];?></td>
                                 <td><?= $isi['MB'];?></td>
                                 <td><?= ($isi['MD']);?></td>
-                                <td>
+                                 <td>
                                     <a href="<?= base_url('data/edit/'.$isi['id_basis']);?>" 
                                     class="btn btn-success">
                                     Edit</a>
@@ -41,7 +45,9 @@
                     </tbody>  
 
                 </table>
+              
             </div>
         </div>
     </div>
 </div>
+<?=$this->endSection('');?>

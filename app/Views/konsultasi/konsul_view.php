@@ -1,3 +1,7 @@
+<?=$this->extend('layout/base');?>
+
+<?=$this->section('content');?>
+
 <div class="container">
     <!-- <a href="<?= base_url('konsul/tambah');?>" class="btn btn-info mb-2">Tambah Data</a>
     <a href="<?= base_url('pages');?>" class="btn btn-info mb-2">Kembali</a> -->
@@ -23,22 +27,10 @@
                                 <td><?= $isi['kode_gejala'];?></td>
                                 <td><?= $isi['nama_gejala'];?></td>
                                 <td>
-                                    <!-- <a href="<?= base_url('kode/edit/'.$isi['id_kode']);?>" 
-                                    class="btn btn-success">
-                                    Edit</a>
-                                    <a href="<?= base_url('kode/hapus/'.$isi['id_kode']);?>" 
-                                    onclick="javascript:return confirm('Apakah ingin menghapus data barang ?')"
-                                    class="btn btn-danger">
-                                    Hapus</a> -->
-                                    <select id="cars">
-                                    <option value="sangatyakin">Sangat Yakin</option>
-                                    <option value="yakin">Yakin</option>
-                                    <option value="cukupyakin">Cukup Yakin</option>
-                                    <option value="sedikityakin" selected>Sedikit Yakin</option>
-                                    <option value="tidaktahu" selected>Tidak Tahu</option>
-                                    <option value="tidak" selected>tidak</option>
-                                    <option value="pilih jawaban" selected>Pilih keyakinan</option>
-                                    </select>
+                                    
+                                    <input type="checkbox" name="check_list[]" alt="Checkbox" value="merah"> YA
+		                            <input type="checkbox" name="check_list[]" alt="Checkbox" value="kuning"> TIDAK
+		                            
                                 </td>
                             </tr>
                         <?php $no++;}?>
@@ -49,3 +41,5 @@
         </div>
     </div>
 </div>
+
+<?=$this->endSection('');?>

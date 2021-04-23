@@ -1,58 +1,8 @@
-<!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-}
+<?=$this->extend('layout/base');?>
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+<?=$this->section('content');?>
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('assets/img/logoSapi.jpg');
-  min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url('assets/img/logo1.jpg');
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url('assets/img/logo1.jpg');
-  min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-</style>
 <body>
-
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
@@ -98,7 +48,7 @@ dan penanganan secara dini jika hewan sapi terdeteksi mengalami sakit.</p>
 <div class="w3-content w3-container w3-padding-64" id="contact">
   <h3 class="w3-center">CONTACT ME</h3>
   <p class="w3-center"><em>Tuban Jawa Timur</em></p>
-  <p class="w3-center"><em>Phone : +62</em></p>
+  <p class="w3-center"><em>Phone : +62 815-5586-3186</em></p>
   <p class="w3-center"><em>Email : mail@gmail.com</em></p>
     <!-- <div class="w3-content w3-container w3-padding-64">
       <div class="w3-content w3-container w3-padding-64">
@@ -140,5 +90,4 @@ function toggleFunction() {
 }
 </script>
 
-</body>
-</html>
+<?=$this->endSection('');?>

@@ -1,3 +1,7 @@
+<?=$this->extend('layout/base');?>
+
+<?=$this->section('content');?>
+
 <div class="container pt-5">
     <a href="<?= base_url('kode/tambah');?>" class="btn btn-success mb-2">Tambah Data</a>
     <a href="<?= base_url('pages');?>" class="btn btn-success mb-2">Kembali</a>
@@ -41,3 +45,4 @@
         </div>
     </div>
 </div>
+<?=$this->endSection('');?>

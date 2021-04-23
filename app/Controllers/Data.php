@@ -7,16 +7,12 @@ class Data extends Controller
 {
     public function index()
     {
+        $pager = \Config\Services::pager();
         $model = new Data_model();
         $data['title']     = 'Basis Data';
         $data['getData'] = $model->getData();
         // echo view('basisdata/header_view', $data);
-        echo view('basisdata/footer_view', $data);
-        echo view('layout/header');
-        echo view('layout/sidebar');
-        echo view('layout/topbar');
-        echo view('basisdata/barang_view', $data);
-        echo view('layout/footer');
+        return view('basisdata/barang_view', $data);
     }
     public function tambah()
     {

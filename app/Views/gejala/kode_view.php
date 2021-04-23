@@ -1,6 +1,9 @@
-<div class="container pt-5">
-    <a href="<?= base_url('kode/tambah');?>" class="btn btn-success mb-2">Tambah Data</a>
-    <a href="<?= base_url('pages');?>" class="btn btn-success mb-2">Kembali</a>
+<?=$this->extend('layout/base');?>
+
+<?=$this->section('content');?>
+<div class="container">
+    <a href="<?= base_url('kode/tambah');?>" class="btn btn-info mb-2">Tambah Data</a>
+    <a href="<?= base_url('pages');?>" class="btn btn-info mb-2">Kembali</a>
     <div class="card">
         <div class="card-header bg-info text-white">
             <h4 class="card-title">Table Data Gejala</h4>
@@ -41,3 +44,4 @@
         </div>
     </div>
 </div>
+<?=$this->endSection('');?>

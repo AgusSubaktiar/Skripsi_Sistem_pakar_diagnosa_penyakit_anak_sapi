@@ -11,12 +11,9 @@ class Konsultasi extends Controller
         $data['title']     = 'Data Kode';
         $data['getData'] = $model->getData();
         // echo view('gejala/header_view', $data);
-        echo view('gejala/footer_view', $data);
-        echo view('layout/header');
-        echo view('layout/sidebar');
-        echo view('layout/topbar');
-        echo view('konsultasi/konsul_view'); 
-        echo view('layout/footer');
+      
+        return view('konsultasi/konsul_view',$data); 
+        
         
         
     }
